@@ -1,0 +1,695 @@
+/* ========================================
+   COLOR PALETTE
+======================================== */
+
+:root {
+
+    --olive: #555934;
+
+    --cream: #F2E6D8;
+
+    --tan: #BF9B7A;
+
+    --brown: #8C5B3E;
+
+    --dark-brown: #593E2E;
+
+    --terracotta: #9E3A26;
+
+    --white: #FFFFFF;
+
+    --text-light: #6B625D;
+
+}
+
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    background-color: var(--white);
+
+    color: var(--dark-brown);
+
+    line-height: 1.6;
+
+}
+
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+a {
+
+    color: inherit;
+
+}
+
+
+button {
+
+    font-family: inherit;
+
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+
+    background-color: var(--white);
+
+    border-bottom:
+        1px solid var(--cream);
+
+}
+
+
+.header-content {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 14px 20px;
+
+}
+
+
+.logo-link {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.logo {
+
+    width: 48px;
+
+    height: 48px;
+
+}
+
+
+.site-name {
+
+    flex: 1;
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    color: var(--dark-brown);
+
+}
+
+
+/* ========================================
+   MOBILE MENU BUTTON
+======================================== */
+
+.menu-button {
+
+    border: none;
+
+    background-color: transparent;
+
+    color: var(--dark-brown);
+
+    font-size: 1.8rem;
+
+    cursor: pointer;
+
+    padding: 5px;
+
+}
+
+
+.menu-button:hover {
+
+    color: var(--terracotta);
+
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+nav {
+
+    display: none;
+
+    flex-direction: column;
+
+    background-color: var(--white);
+
+    border-top:
+        1px solid var(--cream);
+
+}
+
+
+nav.open {
+
+    display: flex;
+
+}
+
+
+nav a {
+
+    padding: 14px 20px;
+
+    text-decoration: none;
+
+    color: var(--dark-brown);
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+nav a:hover {
+
+    background-color: var(--cream);
+
+    color: var(--terracotta);
+
+}
+
+
+nav a.active {
+
+    background-color: var(--cream);
+
+    color: var(--terracotta);
+
+    font-weight: 600;
+
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+main {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 35px 20px 60px;
+
+}
+
+
+h1 {
+
+    margin: 0 0 35px;
+
+    font-size: 2rem;
+
+    color: var(--dark-brown);
+
+}
+
+
+h2 {
+
+    margin: 0;
+
+    color: var(--dark-brown);
+
+    font-size: 1.25rem;
+
+    font-weight: 600;
+
+}
+
+
+h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 45px;
+
+    height: 3px;
+
+    margin-top: 9px;
+
+    background-color: var(--olive);
+
+}
+
+
+/* ========================================
+   TOP SECTIONS
+======================================== */
+
+.top-sections {
+
+    display: grid;
+
+    gap: 45px;
+
+}
+
+
+.about-section,
+.photo-section {
+
+    background-color: var(--white);
+
+}
+
+
+.section-content {
+
+    padding-top: 12px;
+
+}
+
+
+.section-content p {
+
+    margin: 0 0 15px;
+
+    color: var(--text-light);
+
+}
+
+
+.section-content p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* ========================================
+   STUDENT PHOTO
+======================================== */
+
+.photo-container {
+
+    padding-top: 20px;
+
+}
+
+
+.photo-container img {
+
+    width: 100%;
+
+    max-width: 300px;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    margin: 0 auto;
+
+    border-radius: 10px;
+
+    border:
+        2px solid var(--cream);
+
+}
+
+
+/* ========================================
+   COURSES
+======================================== */
+
+.courses-section {
+
+    margin-top: 60px;
+
+    padding-top: 40px;
+
+    border-top:
+        1px solid var(--cream);
+
+}
+
+
+.courses-intro {
+
+    margin: 12px 0 0;
+
+    color: var(--text-light);
+
+    font-size: 0.9rem;
+
+}
+
+
+/* ========================================
+   FILTER BUTTONS
+======================================== */
+
+.course-filters {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin: 25px 0;
+
+}
+
+
+.filter-button {
+
+    flex: 1;
+
+    padding: 10px 15px;
+
+    background-color: var(--white);
+
+    color: var(--dark-brown);
+
+    border:
+        1px solid var(--tan);
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 0.9rem;
+
+    font-weight: 500;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+/* Hover */
+
+.filter-button:hover {
+
+    border-color: var(--terracotta);
+
+    color: var(--terracotta);
+
+}
+
+
+/* Selected */
+
+.filter-button.active-filter {
+
+    background-color: var(--terracotta);
+
+    color: var(--white);
+
+    border-color: var(--terracotta);
+
+}
+
+
+/* ========================================
+   COURSE CARDS
+======================================== */
+
+.course-container {
+
+    display: grid;
+
+    gap: 12px;
+
+}
+
+
+.course-card {
+
+    padding: 20px;
+
+    background-color: var(--white);
+
+    border:
+        1px solid var(--cream);
+
+    border-left:
+        4px solid var(--tan);
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+.course-card:hover {
+
+    transform: translateY(-2px);
+
+    border-left-color: var(--terracotta);
+
+    box-shadow:
+        0 6px 20px
+        rgba(89, 62, 46, 0.08);
+
+}
+
+
+/* Completed courses */
+
+.course-card.completed {
+
+    border-left-color: var(--olive);
+
+    background-color: #FAFAF7;
+
+}
+
+
+.course-card.completed:hover {
+
+    border-left-color: var(--terracotta);
+
+}
+
+
+/* Course code */
+
+.course-card h3 {
+
+    margin: 0 0 7px;
+
+    color: var(--dark-brown);
+
+    font-size: 1rem;
+
+}
+
+
+/* Course name */
+
+.course-name {
+
+    margin: 0 0 14px;
+
+    color: var(--text-light);
+
+    font-size: 0.9rem;
+
+}
+
+
+/* Credits */
+
+.course-credits {
+
+    margin: 0;
+
+    color: var(--brown);
+
+    font-size: 0.8rem;
+
+}
+
+
+/* Completed label */
+
+.completed-label {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding:
+        4px 10px;
+
+    background-color: var(--cream);
+
+    color: var(--olive);
+
+    border-radius: 20px;
+
+    font-size: 0.72rem;
+
+    font-weight: 600;
+
+}
+
+
+/* ========================================
+   TOTAL CREDITS
+======================================== */
+
+.credits {
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: var(--text-light);
+
+    font-size: 0.9rem;
+
+}
+
+
+#total-credits {
+
+    color: var(--olive);
+
+    font-weight: 700;
+
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+
+    padding: 35px 20px;
+
+    background-color: var(--dark-brown);
+
+    color: var(--cream);
+
+    text-align: center;
+
+}
+
+
+.social-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.social-links a {
+
+    text-decoration: none;
+
+}
+
+
+.social-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 40px;
+
+    height: 40px;
+
+    border:
+        1px solid var(--cream);
+
+    border-radius: 50%;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.social-links a:hover .social-icon {
+
+    background-color: var(--terracotta);
+
+    border-color: var(--terracotta);
+
+    color: var(--white);
+
+}
+
+
+footer p {
+
+    margin: 7px 0;
+
+    font-size: 0.8rem;
+
+}

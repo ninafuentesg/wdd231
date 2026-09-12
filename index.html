@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Nina Fuentes' WDD 231 course home page. Explore my web development courses and progress.">
+
+    <meta name="author"
+        content="Nina Adriana Fuentes Guerrero">
+
+    <title>WDD 231 | Nina Fuentes</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="styles/small.css">
+
+    <link rel="stylesheet"
+        href="styles/larger.css">
+
+
+    <!-- JavaScript -->
+
+    <script
+        src="scripts/navigation.js"
+        defer>
+    </script>
+
+    <script
+        src="scripts/date.js"
+        defer>
+    </script>
+
+    <script
+        src="scripts/course.js"
+        defer>
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="header-content">
+
+
+            <a href="index.html"
+                class="logo-link">
+
+                <img
+                    src="images/byui-logo.jpg   "
+                    alt="Brigham Young University-Idaho logo"
+                    class="logo">
+
+            </a>
+
+
+            <span class="site-name">
+                Nina Fuentes
+            </span>
+
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                ☰
+
+            </button>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav id="navigation">
+
+            <a
+                href="index.html"
+                class="active">
+
+                Home
+
+            </a>
+
+
+            <a href="#">
+                Chamber Project
+            </a>
+
+
+            <a href="#">
+                Final Project
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <h1>
+            Home
+        </h1>
+
+
+
+        <!-- =========================
+             ABOUT + PHOTO
+        ========================== -->
+
+        <div class="top-sections">
+
+
+            <!-- About Me -->
+
+            <section class="about-section">
+
+                <h2>
+                    About Me
+                </h2>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Hello! My name is Nina Fuentes. I am a student
+                        interested in technology, biology, biotechnology,
+                        and web development.
+                    </p>
+
+
+                    <p>
+                        I enjoy learning new things and developing
+                        skills that allow me to create useful and
+                        meaningful projects.
+                    </p>
+
+
+                    <p>
+                        This page is part of my WDD 231 Web Frontend
+                        Development I course. Here I will keep track
+                        of my progress and the courses I have completed
+                        throughout my program.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- Student Photo -->
+
+            <section class="photo-section">
+
+                <h2>
+                    Student Photo
+                </h2>
+
+
+                <div class="photo-container">
+
+                    <img
+                        src="images/student-photo.jpg"
+                        alt="Photo of Nina Fuentes">
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- =========================
+             COURSES
+        ========================== -->
+
+        <section class="courses-section">
+
+
+            <h2>
+                Web Certificate Courses
+            </h2>
+
+
+            <p class="courses-intro">
+                Courses I have completed or am currently taking
+                as part of my Web and Computer Programming certificate.
+            </p>
+
+
+
+            <!-- Filter buttons -->
+
+            <div class="course-filters">
+
+
+                <button
+                    id="all-courses"
+                    class="filter-button active-filter">
+
+                    All
+
+                </button>
+
+
+                <button
+                    id="cse-courses"
+                    class="filter-button">
+
+                    CSE
+
+                </button>
+
+
+                <button
+                    id="wdd-courses"
+                    class="filter-button">
+
+                    WDD
+
+                </button>
+
+            </div>
+
+
+
+            <!-- Course cards -->
+
+            <div
+                id="course-container"
+                class="course-container">
+
+            </div>
+
+
+
+            <!-- Credits -->
+
+            <p class="credits">
+
+                Total Credits:
+                <span id="total-credits">
+                    0
+                </span>
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+
+        <!-- Social links -->
+
+        <div class="social-links">
+
+
+            <a
+                href="https://github.com/ninafuentesg/wdd231"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub">
+
+                <span class="social-icon">
+                    GH
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="https://www.linkedin.com/in/nina-adriana-fuentes-guerrero/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">
+
+                <span class="social-icon">
+                    in
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="#"
+                aria-label="Social media">
+
+                <span class="social-icon">
+                    X
+                </span>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- Copyright -->
+
+        <p>
+
+            ©
+            <span id="currentyear"></span>
+
+            Nina Adriana Fuentes Guerrero
+
+            | Peru
+
+        </p>
+
+
+
+        <!-- Last modified -->
+
+        <p id="lastModified">
+
+        </p>
+
+
+    </footer>
+
+
+</body>
+
+</html>

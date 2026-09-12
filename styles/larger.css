@@ -1,0 +1,186 @@
+/* ========================================
+   LARGE SCREEN
+======================================== */
+
+@media screen and (min-width: 700px) {
+
+
+    /* ====================================
+       HEADER
+    ==================================== */
+
+    .header-content {
+
+        padding:
+            18px 30px;
+
+    }
+
+
+    .logo {
+
+        width: 55px;
+
+        height: 55px;
+
+    }
+
+
+    .site-name {
+
+        font-size: 1.35rem;
+
+    }
+
+
+    .menu-button {
+
+        display: none;
+
+    }
+
+
+
+    /* ====================================
+       NAVIGATION
+    ==================================== */
+
+    nav {
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: center;
+
+        gap: 5px;
+
+        border-top: none;
+
+        border-bottom:
+            1px solid var(--cream);
+
+    }
+
+
+    nav a {
+
+        position: relative;
+
+        padding:
+            13px 25px;
+
+    }
+
+
+    nav a.active {
+
+        background-color: transparent;
+
+        color: var(--terracotta);
+
+    }
+
+
+    nav a.active::after {
+
+        content: "";
+
+        position: absolute;
+
+        left: 25px;
+
+        right: 25px;
+
+        bottom: 0;
+
+        height: 3px;
+
+        background-color:
+            var(--terracotta);
+
+    }
+
+
+    nav a:hover {
+
+        background-color: var(--cream);
+
+        color: var(--terracotta);
+
+    }
+
+
+
+    /* ====================================
+       MAIN
+    ==================================== */
+
+    main {
+
+        padding:
+            50px 35px 70px;
+
+    }
+
+
+    h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+
+
+    /* ====================================
+       ABOUT + PHOTO
+    ==================================== */
+
+    .top-sections {
+
+        grid-template-columns:
+            2fr 1fr;
+
+        align-items: center;
+
+        gap: 60px;
+
+    }
+
+
+    .photo-container {
+
+        padding-top: 20px;
+
+    }
+
+
+
+    /* ====================================
+       COURSES
+    ==================================== */
+
+    .course-container {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 18px;
+
+    }
+
+
+    .course-card {
+
+        min-height: 185px;
+
+    }
+
+
+    .course-filters {
+
+        max-width: 500px;
+
+    }
+
+}
