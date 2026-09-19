@@ -1,0 +1,90 @@
+@media screen and (min-width: 700px) {
+
+    /* HEADER */
+
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.2rem 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+
+    /* NAVIGATION */
+
+    nav {
+        display: block;
+        background-color: var(--secondary);
+    }
+
+    nav ul {
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 0.8rem 1.5rem;
+        border: none;
+    }
+
+
+    /* MAIN */
+
+    main {
+        padding: 4rem 2rem;
+    }
+
+    .directory-heading {
+        padding: 2rem 0 4rem;
+    }
+
+    .directory-heading h1 {
+        font-size: 3.5rem;
+    }
+
+
+    /* CONTROLS */
+
+    .directory-controls {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    /* GRID */
+
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* LIST */
+
+    #members.list .member-card {
+        grid-template-columns: 180px 1fr;
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+
+    #members.list .member-image {
+        display: block;
+        width: 150px;
+        height: 100px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 3rem;
+        padding: 3rem max(2rem, calc((100% - 1200px) / 2));
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover local businesses and organizations through the Cajamarca Chamber of Commerce directory.">
+
+    <meta name="author" content="Nina Fuentes">
+
+    <meta property="og:title" content="Cajamarca Chamber of Commerce | Directory">
+    <meta property="og:description"
+        content="Discover local businesses and organizations in Cajamarca.">
+    <meta property="og:image"
+        content="https://username.github.io/wdd231/chamber/images/social-image.jpg">
+    <meta property="og:url"
+        content="https://username.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <title>Cajamarca Chamber of Commerce | Directory</title>
+
+    <link rel="icon" href="images/favicon.svg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg"
+                    alt="Cajamarca Chamber of Commerce logo">
+            </a>
+
+            <div class="site-title">
+                <span>Cajamarca</span>
+                <small>CHAMBER OF COMMERCE</small>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="directory-heading">
+
+            <p class="eyebrow">LOCAL BUSINESS • COMMUNITY • CONNECTION</p>
+
+            <h1>Business Directory</h1>
+
+            <p>
+                Discover businesses, organizations, and services
+                that contribute to the Cajamarca community.
+            </p>
+
+        </section>
+
+
+        <section class="directory-controls">
+
+            <h2>Explore our members</h2>
+
+            <div class="view-buttons">
+
+                <button id="grid" class="view-button active">
+                    ▦ Grid
+                </button>
+
+                <button id="list" class="view-button">
+                    ☰ List
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section id="members" class="members-grid">
+            <!-- JavaScript will insert the members here -->
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <img src="images/logo.svg"
+                alt="Cajamarca Chamber of Commerce logo">
+
+            <div>
+                <h2>Cajamarca Chamber of Commerce</h2>
+
+                <p>
+                    Connecting businesses.<br>
+                    Strengthening our community.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <p>Cajamarca, Peru</p>
+            <p>info@cajamarcachamber.org</p>
+            <p>+51 920 080 377</p>
+
+        </div>
+
+
+        <div class="footer-development">
+
+            <h3>WDD 231</h3>
+
+            <p>
+                © <span id="currentyear"></span>
+                Cajamarca Chamber of Commerce
+            </p>
+
+            <p>
+                Nina Fuentes
+            </p>
+
+            <p>
+                Last Modification:
+                <span id="lastModified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

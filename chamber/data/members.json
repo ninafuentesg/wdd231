@@ -1,0 +1,68 @@
+
+{
+    "members": [
+        {
+            "name": "Wyndham Costa del Sol Cajamarca",
+            "address": "Jr. Cruz de Piedra 707, Cajamarca, Peru",
+            "phone": "+51 76 362472",
+            "website": "https://www.costadelsolperu.com/",
+            "image": "costa-del-sol.jpg",
+            "membership": 3,
+            "description": "Hotel located in the Plaza de Armas of Cajamarca, offering accommodation, dining, events, and services for business and leisure travelers."
+        },
+        {
+            "name": "Hotel Cajamarca",
+            "address": "Jr. Dos de Mayo 311, Cajamarca, Peru",
+            "phone": "+51 76 262025",
+            "website": "https://www.hotelescajamarca.pe/",
+            "image": "hotel-cajamarca.jpg",
+            "membership": 2,
+            "description": "Traditional hotel in the heart of Cajamarca offering comfortable accommodation and convenient access to the city's historic center."
+        },
+        {
+            "name": "El Portal del Marqués",
+            "address": "Jr. del Comercio 644, Cajamarca, Peru",
+            "phone": "+51 76 368464",
+            "website": "https://www.hotelportaldelmarques.com/",
+            "image": "portal-del-marques.jpg",
+            "membership": 3,
+            "description": "Historic hotel in downtown Cajamarca offering accommodation and a convenient location near the city's main attractions."
+        },
+        {
+            "name": "Restaurante Madre Artesana",
+            "address": "Jr. del Batán 316, Cajamarca, Peru",
+            "phone": "+51 969 085 625",
+            "website": "https://www.facebook.com/profile.php?id=61556512591329",
+            "image": "madre-artesana.jpg",
+            "membership": 2,
+            "description": "Italian restaurant in Cajamarca offering fresh pasta, pizza, desserts, coffee, and a welcoming dining experience."
+        },
+        {
+            "name": "Brasas Beef",
+            "address": "Jr. Amazonas 679, Cajamarca, Peru",
+            "phone": "+51 976 901 010",
+            "website": "https://www.facebook.com/brasasbeef",
+            "image": "brasas-beef.jpg",
+            "membership": 3,
+            "description": "Restaurant specializing in grilled meats, chicken, and other dishes in a relaxed dining environment."
+        },
+        {
+            "name": "El Querubino Restaurante - Café",
+            "address": "Amalia Puga 589, Cajamarca, Peru",
+            "phone": "+51 941 467 105",
+            "website": "https://www.facebook.com/elquerubinocajamarca",
+            "image": "el-querubino.jpg",
+            "membership": 2,
+            "description": "Restaurant and café in central Cajamarca offering meals, drinks, and a relaxed place to gather."
+        },
+        {
+            "name": "Cajamarca HOST",
+            "address": "Jr. Los Eucaliptos 112, Cajamarca, Peru",
+            "phone": "+51 976 313 531",
+            "website": "https://cajamarcahost.com/",
+            "image": "cajamarca-host.jpg",
+            "membership": 1,
+            "description": "Local technology business providing web design, website development, and hosting services in Cajamarca."
+        }
+    ]
+}
