@@ -4,19 +4,21 @@
     --background: #FFFFFF;
     --light: #D6D6D6;
     --accent: #B9A89C;
-    --brown: #73675A;
+    --brown: #66594F;
     --text: #262621;
 }
 
-
 body {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Montserrat", sans-serif;
     color: var(--text);
     background-color: var(--background);
 }
 
-
-/* HEADER */
+h1,
+h2,
+h3 {
+    font-family: "Cormorant Garamond", serif;
+}
 
 header {
     background-color: var(--primary);
@@ -43,16 +45,17 @@ header {
 }
 
 .site-title span {
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .site-title small {
+    font-family: "Montserrat", sans-serif;
     font-size: 0.65rem;
     letter-spacing: 0.15rem;
     color: var(--brown);
 }
-
 
 #menu-button {
     background: transparent;
@@ -60,9 +63,6 @@ header {
     font-size: 1.8rem;
     color: var(--text);
 }
-
-
-/* NAVIGATION */
 
 nav {
     display: none;
@@ -92,17 +92,11 @@ nav a.active {
     background-color: var(--primary);
 }
 
-
-/* MAIN */
-
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
-
-
-/* DIRECTORY INTRO */
 
 .directory-heading {
     text-align: center;
@@ -112,12 +106,13 @@ main {
 .eyebrow {
     color: var(--brown);
     font-size: 0.7rem;
+    font-weight: 600;
     letter-spacing: 0.15rem;
     margin-bottom: 0.7rem;
 }
 
 .directory-heading h1 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     margin-bottom: 0.8rem;
 }
 
@@ -126,9 +121,6 @@ main {
     margin: 0 auto;
     color: var(--brown);
 }
-
-
-/* CONTROLS */
 
 .directory-controls {
     display: flex;
@@ -139,7 +131,7 @@ main {
 }
 
 .directory-controls h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .view-buttons {
@@ -152,16 +144,14 @@ main {
     border: 1px solid var(--accent);
     background-color: var(--background);
     color: var(--brown);
+    font-weight: 600;
 }
 
 .view-button:hover,
 .view-button.active {
     background-color: var(--accent);
-    color: white;
+    color: var(--text);
 }
-
-
-/* MEMBERS GRID */
 
 #members {
     display: grid;
@@ -169,11 +159,8 @@ main {
     gap: 1.5rem;
 }
 
-
-/* MEMBER CARD */
-
 .member-card {
-    background-color: white;
+    background-color: var(--background);
     border: 1px solid var(--light);
     padding: 1.2rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -192,7 +179,7 @@ main {
 }
 
 .member-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     margin-bottom: 0.4rem;
 }
 
@@ -204,22 +191,21 @@ main {
 .member-level {
     display: inline-block;
     background-color: var(--primary);
+    color: var(--text);
     padding: 0.3rem 0.7rem;
     margin: 0.5rem 0;
     font-size: 0.75rem;
+    font-weight: 600;
     letter-spacing: 0.05rem;
 }
 
 .member-card a {
     display: inline-block;
     color: var(--brown);
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: underline;
     margin-top: 0.5rem;
 }
-
-
-/* LIST VIEW */
 
 #members.list {
     display: flex;
@@ -240,9 +226,6 @@ main {
 #members.list .member-image {
     display: none;
 }
-
-
-/* FOOTER */
 
 footer {
     background-color: var(--text);
@@ -265,7 +248,7 @@ footer {
 }
 
 footer h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 footer h3 {
