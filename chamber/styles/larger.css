@@ -1,39 +1,34 @@
+
+
 @media screen and (min-width: 800px) {
+
+    /* =====================================
+       HEADER
+       ===================================== */
+
     .header-container {
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
         flex-wrap: nowrap;
+        justify-content: space-between;
         gap: 0.8rem;
-        width: 100%;
     }
 
     .logo-link {
-        display: flex;
         flex-direction: row;
         align-items: center;
         flex-shrink: 0;
     }
 
-    #main-nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        flex: 1;
-    }
-}
-    
-    .logo-link img {
-        display: block;
-        width: 58px;
-        height: 58px;
-        object-fit: contain;
-    }
-
     #menu-button {
         display: none;
+    }
+
+    #main-nav {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
     }
 
     nav {
@@ -48,16 +43,68 @@
         justify-content: center;
     }
 
+    nav li {
+        border-bottom: none;
+    }
+
     nav a {
         padding: 0.8rem 1.5rem;
         border: none;
     }
 
+
+    /* =====================================
+       MAIN
+       ===================================== */
+
     main {
         padding: 4rem 2rem;
     }
 
+
+    /* =====================================
+       HOME
+       ===================================== */
+
+    .hero {
+        position: relative;
+        margin: -4rem -2rem 3rem;
+    }
+
+    .hero-content {
+        position: absolute;
+        left: 5%;
+        bottom: 10%;
+        max-width: 520px;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.94);
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-section {
+        max-width: 1200px;
+        margin: 0 auto 4rem;
+    }
+
+    .forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* =====================================
+       DIRECTORY
+       ===================================== */
+
     .directory-heading {
+        max-width: 1200px;
+        margin: 0 auto;
         padding: 2rem 0 4rem;
     }
 
@@ -66,11 +113,15 @@
     }
 
     .directory-controls {
+        max-width: 1200px;
+        margin: 0 auto 2rem;
         flex-direction: row;
         justify-content: space-between;
     }
 
     #members.grid {
+        max-width: 1200px;
+        margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -86,17 +137,11 @@
         height: 100px;
     }
 
-    footer {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 3rem;
-        padding: 3rem max(2rem, calc((100% - 1200px) / 2));
-    }
 
+    /* =====================================
+       JOIN
+       ===================================== */
 
-
-
-@media screen and (min-width: 800px) {
     .join-page {
         padding: 2rem 1.5rem 5rem;
     }
@@ -119,7 +164,24 @@
         min-height: 150px;
     }
 
+
+    /* =====================================
+       THANK YOU
+       ===================================== */
+
     .thankyou-card {
         padding: 3rem;
+    }
+
+
+    /* =====================================
+       FOOTER
+       ===================================== */
+
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 3rem;
+        padding: 3rem max(2rem, calc((100% - 1200px) / 2));
     }
 }
