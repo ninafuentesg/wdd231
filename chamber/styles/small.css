@@ -261,3 +261,380 @@ footer p {
     font-size: 0.9rem;
     margin-bottom: 0.3rem;
 }
+
+
+/* ======================================
+   JOIN PAGE
+====================================== */
+
+.join-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 4rem;
+}
+
+.page-title {
+    color: #555934;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.join-page .section-heading {
+    margin-bottom: 1.5rem;
+}
+
+.join-page .section-heading p,
+.section-label {
+    color: #9E3A26;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+.join-page .section-heading h2 {
+    color: #555934;
+    font-size: 1.5rem;
+}
+
+
+/* ======================================
+   MEMBERSHIP FORM
+====================================== */
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.membership-form > label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    color: #8C5B3E;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.membership-form input:not([type="radio"]):not([type="hidden"]),
+.membership-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #C5BFB3;
+    border-left: 4px solid #9E3A26;
+    border-radius: 4px;
+    background: #fff;
+    color: #593E2E;
+    font: inherit;
+    font-weight: normal;
+}
+
+.membership-form input:focus,
+.membership-form textarea:focus {
+    outline: 2px solid #555934;
+    outline-offset: 2px;
+}
+
+.membership-form textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.membership-options {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    padding: 0.25rem 0;
+}
+
+.membership-options legend {
+    color: #8C5B3E;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    color: #593E2E;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.radio-option input {
+    accent-color: #9E3A26;
+    width: 16px;
+    height: 16px;
+}
+
+.submit-button {
+    width: fit-content;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.9rem 1.3rem;
+    background: #9E3A26;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background: #593E2E;
+    transform: translateY(-2px);
+}
+
+
+/* ======================================
+   MEMBERSHIP LEVEL CARDS
+====================================== */
+
+.level-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.level-card {
+    min-height: 145px;
+    padding: 1.5rem 1rem;
+    border: 1px solid #BF9B7A;
+    border-radius: 12px;
+    background: #F2E6D8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.45rem;
+    opacity: 0;
+    animation: level-appear 0.65s ease forwards;
+}
+
+.level-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.level-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.level-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.level-card:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+.level-card h3 {
+    color: #555934;
+    font-size: 1.15rem;
+}
+
+.level-card p {
+    color: #593E2E;
+    font-size: 0.85rem;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 0.4rem;
+    padding: 0.4rem 0.9rem;
+    background: white;
+    border: 1px solid #BF9B7A;
+    border-radius: 4px;
+    color: #9E3A26;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+    background: #9E3A26;
+    color: white;
+}
+
+
+/* Initial animation on page load */
+@keyframes level-appear {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ======================================
+   MEMBERSHIP MODALS
+====================================== */
+
+.benefit-modal {
+    width: min(90%, 480px);
+    max-height: 85vh;
+    margin: auto;
+    padding: 1.5rem;
+    border: 2px solid #9E3A26;
+    border-radius: 12px;
+    background: #fff;
+    color: #593E2E;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-modal::backdrop {
+    background: rgba(30, 30, 25, 0.6);
+}
+
+.benefit-modal[open] {
+    animation: modal-appear 0.25s ease-out;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #F2E6D8;
+}
+
+.modal-header h2 {
+    color: #555934;
+    font-size: 1.4rem;
+}
+
+.close-modal {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border: 1px solid #C5BFB3;
+    border-radius: 6px;
+    background: #F2E6D8;
+    color: #593E2E;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    background: #9E3A26;
+    color: white;
+}
+
+.benefit-modal h3 {
+    margin: 1rem 0 0.5rem;
+    color: #555934;
+    font-size: 1rem;
+}
+
+.benefit-modal ul {
+    padding-left: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-modal li {
+    margin-bottom: 0.4rem;
+}
+
+.modal-cost {
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid #F2E6D8;
+    color: #9E3A26;
+    font-weight: bold;
+}
+
+@keyframes modal-appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ======================================
+   THANK YOU PAGE
+====================================== */
+
+.thankyou-page {
+    max-width: 850px;
+    min-height: 55vh;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.thankyou-card {
+    padding: 2rem 1.5rem;
+    border: 1px solid #F2E6D8;
+    border-radius: 10px;
+    background: white;
+}
+
+.thankyou-card h2 {
+    margin: 0.5rem 0 1rem;
+    color: #555934;
+    font-size: 2rem;
+}
+
+.thankyou-intro {
+    margin-bottom: 2rem;
+}
+
+.submitted-info {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #F2E6D8;
+    border-radius: 8px;
+}
+
+.submitted-info h3 {
+    margin-bottom: 1rem;
+    color: #555934;
+}
+
+.submitted-info p {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #BF9B7A;
+    overflow-wrap: anywhere;
+}
+
+.submitted-info p:last-child {
+    border-bottom: 0;
+}
+
+.submitted-info strong {
+    color: #593E2E;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .level-card,
+    .benefit-modal[open] {
+        animation: none;
+        opacity: 1;
+    }
+
+    .submit-button,
+    .learn-more {
+        transition: none;
+    }
+}

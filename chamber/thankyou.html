@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Cajamarca Chamber of Commerce</title>
+    <meta name="description" content="Thank you for applying to join the Cajamarca Chamber of Commerce.">
+
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="Cajamarca Chamber of Commerce logo">
+                <div>
+                    <h1>Cajamarca</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </a>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="thankyou-page">
+        <section class="thankyou-card">
+            <p class="section-label">Cajamarca Chamber of Commerce</p>
+            <h2>Thank you for applying!</h2>
+            <p class="thankyou-intro">
+                We appreciate your interest in becoming part of our business community.
+                Here is a summary of the information you submitted.
+            </p>
+
+            <div class="submitted-info">
+                <h3>Application Details</h3>
+
+                <p><strong>First Name:</strong> <span id="display-firstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="display-lastName"></span></p>
+                <p><strong>Email:</strong> <span id="display-email"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="display-phone"></span></p>
+                <p><strong>Business / Organization:</strong> <span id="display-organization"></span></p>
+                <p><strong>Application Date:</strong> <span id="display-timestamp"></span></p>
+            </div>
+
+            <a href="index.html" class="cta-button">Return to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h2>Cajamarca Chamber of Commerce</h2>
+                <p>Connecting businesses and strengthening our community.</p>
+            </div>
+            <div>
+                <p>Cajamarca, Peru</p>
+                <p>info@cajamarcachamber.org</p>
+                <p>+51 76 000000</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Cajamarca Chamber of Commerce</p>
+            <p>WDD 231 Chamber Project</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

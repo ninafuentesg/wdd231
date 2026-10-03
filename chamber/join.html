@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | Cajamarca Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership in the Cajamarca Chamber of Commerce and explore the benefits of joining our business community.">
+    <meta name="author" content="Nina Adriana Fuentes Guerrero">
+
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="Cajamarca Chamber of Commerce logo">
+                <div>
+                    <h1>Cajamarca</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </a>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html" class="active" aria-current="page">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="join-page">
+        <h2 class="page-title">Join</h2>
+
+        <div class="join-layout">
+            <section class="application-section">
+                <div class="section-heading">
+                    <p>Become a member</p>
+                    <h2>Membership Application Form</h2>
+                </div>
+
+                <form action="thankyou.html" method="get" class="membership-form">
+                    <label for="firstName">
+                        First Name
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </label>
+
+                    <label for="lastName">
+                        Last Name
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </label>
+
+                    <label for="organizationTitle">
+                        Organizational Title
+                        <input
+                            type="text"
+                            id="organizationTitle"
+                            name="organizationTitle"
+                            title="Enter your organizational title using at least 7 letters, spaces, or hyphens"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ -]{7,}"
+                        >
+                    </label>
+
+                    <label for="email">
+                        Email Address
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            title="Enter a valid email address"
+                            autocomplete="email"
+                            placeholder="name@example.com"
+                            required
+                        >
+                    </label>
+
+                    <label for="phone">
+                        Mobile Phone Number
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required
+                        >
+                    </label>
+
+                    <label for="organization">
+                        Business / Organization Name
+                        <input
+                            type="text"
+                            id="organization"
+                            name="organization"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required
+                        >
+                    </label>
+
+                    <label for="description">
+                        Business Description
+                        <textarea
+                            id="description"
+                            name="description"
+                            title="Briefly describe your business or organization"
+                            rows="4"
+                        ></textarea>
+                    </label>
+
+                    <fieldset class="membership-options">
+                        <legend>Membership Level</legend>
+
+                        <label class="radio-option" for="np">
+                            <input type="radio" id="np" name="membership" value="np" required>
+                            NP Membership
+                        </label>
+
+                        <label class="radio-option" for="bronze">
+                            <input type="radio" id="bronze" name="membership" value="bronze">
+                            Bronze Membership
+                        </label>
+
+                        <label class="radio-option" for="silver">
+                            <input type="radio" id="silver" name="membership" value="silver">
+                            Silver Membership
+                        </label>
+
+                        <label class="radio-option" for="gold">
+                            <input type="radio" id="gold" name="membership" value="gold">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit" class="submit-button">
+                        Apply for Membership
+                    </button>
+                </form>
+            </section>
+
+            <section class="membership-levels" aria-labelledby="levels-title">
+                <div class="section-heading">
+                    <p>Find your fit</p>
+                    <h2 id="levels-title">Membership Levels</h2>
+                </div>
+
+                <div class="level-cards">
+                    <article class="level-card level-np">
+                        <h3>NP Membership</h3>
+                        <p>For nonprofit organizations</p>
+                        <a href="#np-benefits" class="learn-more" data-modal="np-benefits">Learn More</a>
+                    </article>
+
+                    <article class="level-card level-bronze">
+                        <h3>Bronze Membership</h3>
+                        <p>Build local connections</p>
+                        <a href="#bronze-benefits" class="learn-more" data-modal="bronze-benefits">Learn More</a>
+                    </article>
+
+                    <article class="level-card level-silver">
+                        <h3>Silver Membership</h3>
+                        <p>Grow your visibility</p>
+                        <a href="#silver-benefits" class="learn-more" data-modal="silver-benefits">Learn More</a>
+                    </article>
+
+                    <article class="level-card level-gold">
+                        <h3>Gold Membership</h3>
+                        <p>Expand your opportunities</p>
+                        <a href="#gold-benefits" class="learn-more" data-modal="gold-benefits">Learn More</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Membership benefit dialogs -->
+        <dialog id="np-benefits" class="benefit-modal">
+            <div class="modal-header">
+                <h2>NP Membership</h2>
+                <button type="button" class="close-modal" aria-label="Close dialog">×</button>
+            </div>
+            <p>For nonprofit organizations with no membership fee.</p>
+            <h3>Benefits include:</h3>
+            <ul>
+                <li>Access to selected chamber events</li>
+                <li>Community networking opportunities</li>
+                <li>Business and nonprofit resources</li>
+            </ul>
+            <p class="modal-cost">Cost: Free</p>
+        </dialog>
+
+        <dialog id="bronze-benefits" class="benefit-modal">
+            <div class="modal-header">
+                <h2>Bronze Membership</h2>
+                <button type="button" class="close-modal" aria-label="Close dialog">×</button>
+            </div>
+            <p>For businesses starting to connect with the local community.</p>
+            <h3>Benefits include:</h3>
+            <ul>
+                <li>Access to networking events</li>
+                <li>Member directory listing</li>
+                <li>Selected training opportunities</li>
+            </ul>
+            <p class="modal-cost">Cost: S/ 150 annually</p>
+        </dialog>
+
+        <dialog id="silver-benefits" class="benefit-modal">
+            <div class="modal-header">
+                <h2>Silver Membership</h2>
+                <button type="button" class="close-modal" aria-label="Close dialog">×</button>
+            </div>
+            <p>For businesses ready to increase their visibility.</p>
+            <h3>Benefits include:</h3>
+            <ul>
+                <li>All Bronze membership benefits</li>
+                <li>Discounts on selected chamber events</li>
+                <li>Priority access to business workshops</li>
+                <li>Eligibility for a home page spotlight</li>
+            </ul>
+            <p class="modal-cost">Cost: S/ 300 annually</p>
+        </dialog>
+
+        <dialog id="gold-benefits" class="benefit-modal">
+            <div class="modal-header">
+                <h2>Gold Membership</h2>
+                <button type="button" class="close-modal" aria-label="Close dialog">×</button>
+            </div>
+            <p>For established businesses seeking broader opportunities.</p>
+            <h3>Benefits include:</h3>
+            <ul>
+                <li>All Silver membership benefits</li>
+                <li>Featured home page spotlight opportunities</li>
+                <li>Special event invitations</li>
+                <li>Enhanced promotional opportunities</li>
+                <li>Priority access to selected training</li>
+            </ul>
+            <p class="modal-cost">Cost: S/ 500 annually</p>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h2>Cajamarca Chamber of Commerce</h2>
+                <p>Connecting businesses and strengthening our community.</p>
+            </div>
+            <div>
+                <p>Cajamarca, Peru</p>
+                <p>info@cajamarcachamber.org</p>
+                <p>+51 76 000000</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Cajamarca Chamber of Commerce</p>
+            <p>WDD 231 Chamber Project</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
