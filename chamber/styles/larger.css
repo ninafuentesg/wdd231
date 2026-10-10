@@ -184,4 +184,46 @@
         gap: 3rem;
         padding: 3rem max(2rem, calc((100% - 1200px) / 2));
     }
+    
+
+    footer .logo-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        width: fit-content;
+        max-width: 100%;
+        text-decoration: none;
+    }
+
+    footer .logo-link img {
+        display: block;
+        width: 48px;
+        height: 48px;
+        max-width: 48px;
+        min-width: 48px;
+        object-fit: contain;
+        margin: 0;
+        flex: 0 0 48px;
+    }
+
+
+footer img {
+    max-width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 800px) and (hover: hover) {
+
+    .discover-gallery img {
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+    .discover-gallery img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(38, 38, 33, 0.2);
+    }
+}
 }

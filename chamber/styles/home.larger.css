@@ -1,13 +1,5 @@
-/* =========================================
-   HOME - LARGE SCREEN
-   ========================================= */
 
 @media screen and (min-width: 700px) {
-
-    /* =====================================
-       HEADER
-       Everything stays on ONE ROW
-    ===================================== */
 
     header {
         background-color: var(--primary);
@@ -48,8 +40,7 @@
         object-fit: contain;
     }
 
-    /* Site name */
-
+  
     .site-title {
         flex: 1;
 
@@ -78,22 +69,14 @@
     }
 
 
-    /* =====================================
-       HIDE MOBILE MENU BUTTON
-    ===================================== */
+   
 
     #menu-button {
         display: none;
     }
 
 
-    /* =====================================
-       DESKTOP NAVIGATION
 
-       IMPORTANT:
-       The navigation is INSIDE the header
-       and stays on the SAME ROW.
-    ===================================== */
 
     nav {
         display: flex !important;
@@ -363,4 +346,29 @@
 
         margin: 0 auto;
     }
+    
+
+
+    .community-image img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .community-image img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(38, 38, 33, 0.18);
+    }
+    
+
+
+.visit-message {
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 1rem 1.5rem;
+    background-color: var(--secondary);
+    color: var(--text);
+    border-left: 4px solid var(--accent);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
 }

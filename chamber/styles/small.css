@@ -822,4 +822,18 @@ footer a:focus {
         animation: none;
         opacity: 1;
     }
+    
+
+
+.visit-message {
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 1rem 1.5rem;
+    background-color: var(--secondary);
+    color: var(--text);
+    border-left: 4px solid var(--accent);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
 }

@@ -1,0 +1,180 @@
+
+/* =========================================
+   DISCOVER PAGE
+   Cajamarca Chamber of Commerce
+   ========================================= */
+
+.discover-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+    color: var(--text, #262621);
+    font-family: "Montserrat", sans-serif;
+}
+
+.discover-heading {
+    padding: 2.5rem 0;
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.discover-heading .eyebrow,
+.section-heading > p {
+    color: var(--brown, #66594f);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.discover-heading h1 {
+    margin: 0.5rem 0 1rem;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    line-height: 1.05;
+    color: var(--text, #262621);
+}
+
+.discover-heading > p:last-child {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.visit-section {
+    margin: 0 auto 3rem;
+    padding: 1.5rem;
+    background: var(--primary, #ecd9d1);
+    border-left: 4px solid var(--accent, #9e3a26);
+}
+
+.visit-section h2 {
+    margin-top: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+}
+
+.visit-section p {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.section-heading {
+    margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+    margin-top: 0.4rem;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.attraction-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--light, #d6d6d6);
+    border-radius: 4px;
+    box-shadow: 0 4px 14px rgb(38 38 33 / 7%);
+}
+
+.attraction-card figure {
+    margin: 0;
+    overflow: hidden;
+    background: var(--secondary, #c5bfb3);
+}
+
+.attraction-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.attraction-content {
+    padding: 1.25rem;
+}
+
+.attraction-content h3 {
+    margin: 0 0 0.5rem;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.65rem;
+    line-height: 1.2;
+}
+
+.attraction-category {
+    margin: 0 0 0.8rem;
+    color: var(--brown, #66594f);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.attraction-content > p:last-child {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* Larger screens */
+@media screen and (min-width: 700px) {
+    .discover-page {
+        padding: 3rem 1.5rem 5rem;
+    }
+
+    .discover-heading {
+        padding: 3rem 0 4rem;
+    }
+
+    .attractions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .attraction-card img {
+        height: 260px;
+        transition: transform 0.35s ease, filter 0.35s ease;
+    }
+
+    /* Image hover effect: desktop and mouse only */
+    .attraction-card figure:hover img {
+        transform: scale(1.04);
+        filter: saturate(1.12);
+    }
+}
+
+/* Wide screens */
+@media screen and (min-width: 1000px) {
+    .attractions-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Do not use hover effects on touch/mobile devices */
+@media (hover: none), (max-width: 699px) {
+    .attraction-card img {
+        transition: none;
+    }
+
+    .attraction-card figure:hover img {
+        transform: none;
+        filter: none;
+    }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .attraction-card img {
+        transition: none;
+    }
+}
