@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create a Bouquet | The Secret Garden of Flowers</title>
+  <meta name="description" content="Create a personal floral message by choosing an occasion, a flower, and a color in our interactive bouquet form.">
+  <meta name="author" content="Nina Fuentes">
+  <meta property="og:title" content="Create a Meaningful Bouquet">
+  <meta property="og:description" content="Choose flowers and create a personal floral message for someone special.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ninafuentesg.github.io/wdd231/final/images/hero-flowers.webp">
+  <meta property="og:url" content="https://ninafuentesg.github.io/wdd231/final/bouquet.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/bouquet.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="brand" href="index.html">
+        <img src="favicon.svg" alt="" width="48" height="48">
+        <span>
+          <span class="brand-name">The Secret Garden</span>
+          <span class="brand-tagline">The language of flowers</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="primary-navigation">☰</button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html">Flower Guide</a></li>
+          <li><a href="bouquet.html" aria-current="page">Create a Bouquet</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section section-soft">
+      <div class="container section-heading">
+        <p class="eyebrow">A personal message, told with flowers</p>
+        <h1>Create a Bouquet</h1>
+        <p>
+          Choose a flower and an occasion to explore a meaningful
+          combination. This is a personal design exercise, not a purchase.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-layout">
+        <div class="form-panel">
+          <h2>Your floral story</h2>
+          <p class="form-note">Fields marked with * are required.</p>
+
+          <form id="bouquet-form" action="thankyou.html" method="get">
+            <div class="field">
+              <label for="visitor-name">Your name *</label>
+              <input type="text" id="visitor-name" name="name"
+                autocomplete="name" title="Enter your name" required>
+            </div>
+
+            <div class="field">
+              <label for="occasion">What is the occasion? *</label>
+              <select id="occasion" name="occasion" required>
+                <option value="">Select an occasion</option>
+                <option value="Romance">Love and romance</option>
+                <option value="Friendship">Friendship</option>
+                <option value="Thank You">Gratitude</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Graduation">Graduation</option>
+                <option value="Celebration">Celebration</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="flower-choice">Choose a flower *</label>
+              <select id="flower-choice" name="flower" required>
+                <option value="">Select a flower</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="flower-color">Preferred flower color *</label>
+              <select id="flower-color" name="color" required>
+                <option value="">Select a color</option>
+                <option value="Pink">Pink</option>
+                <option value="White">White</option>
+                <option value="Purple">Purple</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Blue">Blue</option>
+                <option value="Orange">Orange</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="recipient">Who is this bouquet for?</label>
+              <input type="text" id="recipient" name="recipient"
+                autocomplete="off" title="Optional recipient name">
+            </div>
+
+            <div class="field">
+              <label for="message">Your personal message</label>
+              <textarea id="message" name="message" maxlength="300"
+                placeholder="Write a few heartfelt words..."
+                title="Optional message of up to 300 characters"></textarea>
+            </div>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <button class="button" type="submit">Create my floral story</button>
+            <p class="form-note">
+              Your selections are used to create a sample floral idea.
+              No order or payment is made.
+            </p>
+          </form>
+        </div>
+
+        <aside>
+          <img src="images/hero-flowers.webp"
+            alt="Soft pink and white flowers arranged in a delicate bouquet"
+            width="900" height="1100" loading="lazy"
+            style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:180px 180px 10px 10px">
+          <h2>A flower can say so much</h2>
+          <p>
+            Floral meanings vary between cultures and traditions.
+            Use this guide as inspiration and make your message your own.
+          </p>
+          <a href="guide.html">Explore all flower meanings →</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="footer-brand">The Secret Garden</span>
+        <p>A small guide to the stories flowers can tell.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="guide.html">Flower Guide</a>
+          <a href="attributions.html">Attributions</a>
+        </div>
+      </div>
+      <div>
+        <h3>Project</h3>
+        <div class="footer-links">
+          <a href="https://www.loom.com/share/1e36e2ee26604856950032ddb5a97d86"></a>
+        </div>
+        <p class="footer-note">© <span id="currentyear"></span> Nina Fuentes.</p>
+        <p class="footer-note">Last modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

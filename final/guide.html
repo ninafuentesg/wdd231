@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flower Guide | The Secret Garden of Flowers</title>
+  <meta name="description" content="Explore flower meanings, botanical names, colors, and occasions in our interactive guide to the language of flowers.">
+  <meta name="author" content="Nina Fuentes">
+  <meta property="og:title" content="Explore the Flower Guide">
+  <meta property="og:description" content="Discover the meanings of flowers and find the right bloom for a thoughtful message.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ninafuentesg.github.io/wdd231/final/images/hero-flowers.webp">
+  <meta property="og:url" content="https://ninafuentesg.github.io/wdd231/final/guide.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/guide.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="brand" href="index.html">
+        <img src="favicon.svg" alt="" width="48" height="48">
+        <span>
+          <span class="brand-name">The Secret Garden</span>
+          <span class="brand-tagline">The language of flowers</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="primary-navigation">☰</button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html" aria-current="page">Flower Guide</a></li>
+          <li><a href="bouquet.html">Create a Bouquet</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Discover the language of blooms</p>
+          <h1>Flower Guide</h1>
+          <p>
+            Explore traditional floral meanings, learn botanical names,
+            and discover flowers for the moments you want to remember.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar" aria-label="Flower search and filters">
+          <div class="field">
+            <label for="flower-search">Search flowers</label>
+            <input type="search" id="flower-search"
+              placeholder="Try rose, love, or gratitude">
+          </div>
+          <div class="field">
+            <label for="color-filter">Filter by color</label>
+            <select id="color-filter">
+             
+            <option value="">All colors</option>
+            <option value="Red">Red</option>
+            <option value="Pink">Pink</option>
+            <option value="White">White</option>
+            <option value="Purple">Purple</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Blue">Blue</option>
+            <option value="Orange">Orange</option>
+            <option value="Coral">Coral</option>
+            <option value="Green">Green</option>
+            <option value="Cream">Cream</option>
+            <option value="Ivory">Ivory</option>
+            <option value="Gold">Gold</option>
+            <option value="Bronze">Bronze</option>
+            <option value="Violet">Violet</option>
+
+            </select>
+          </div>
+          <div class="field">
+            <label for="occasion-filter">Filter by occasion</label>
+            <select id="occasion-filter">
+              <option value="">All occasions</option>
+              <option value="Romance">Romance</option>
+              <option value="Anniversary">Anniversary</option>
+              <option value="Friendship">Friendship</option>
+              <option value="Thank You">Thank You</option>
+              <option value="Birthday">Birthday</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Graduation">Graduation</option>
+              <option value="Celebration">Celebration</option>
+            </select>
+          </div>
+        </div>
+
+        <p id="flower-count" class="form-note" aria-live="polite">Loading flowers...</p>
+        <div id="flower-grid" class="flower-grid" aria-live="polite"></div>
+
+        <dialog id="flower-modal" class="modal" aria-labelledby="modal-title">
+          <div class="modal-content">
+            <button type="button" class="modal-close" id="modal-close"
+              aria-label="Close flower details">×</button>
+            <img id="modal-image" src="" alt="" width="600" height="450"
+              style="width:100%;max-height:260px;object-fit:cover;border-radius:8px">
+            <p class="eyebrow" id="modal-botanical"></p>
+            <h2 id="modal-title">Flower details</h2>
+            <p id="modal-meaning"></p>
+            <p id="modal-description"></p>
+            <p id="modal-color"></p>
+            <p id="modal-occasion"></p>
+            
+          <section class="cultural-meanings">
+            <h3>Western traditions</h3>
+            <p id="modal-western"></p>
+            <h3>Eastern traditions</h3>
+            <p id="modal-eastern"></p>
+
+            <p class="form-note">
+            Floral symbolism varies across countries, historical periods,
+            and individual traditions. These meanings are a starting point
+            for exploration rather than universal rules.
+            </p>
+</section>
+
+          </div>
+        </dialog>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="footer-brand">The Secret Garden</span>
+        <p>A small guide to the stories flowers can tell.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="bouquet.html">Create a Bouquet</a>
+          <a href="attributions.html">Attributions</a>
+        </div>
+      </div>
+      <div>
+        <h3>Project</h3>
+        <div class="footer-links">
+          <a href="https://www.loom.com/share/1e36e2ee26604856950032ddb5a97d86"></a>
+        </div>
+        <p class="footer-note">© <span id="currentyear"></span> Nina Fuentes.</p>
+        <p class="footer-note">Last modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
