@@ -33,20 +33,31 @@
   <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/main.js" defer></script>
 
-<header class="site-header">
-  <a class="brand" href="index.html">
-    The Secret Garden of Flowers
-  </a>
-
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="guide.html">Guide</a>
-    <a href="bouquet.html">Favorites</a>
-    <a href="attributions.html" aria-current="page">Attributions</a>
-  </nav>
-</header>
-
 <body>
+
+    <header class="site-header">
+    <div class="container header-container">
+      <a class="brand" href="index.html" aria-label="The Secret Garden of Flowers home">
+        <img src="favicon.svg" alt="" width="48" height="48">
+        <span>
+          <span class="brand-name">The Secret Garden</span>
+          <span class="brand-tagline">The language of flowers</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="primary-navigation">☰</button>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="guide.html">Flower Guide</a></li>
+          <li><a href="bouquet.html">Create a Bouquet</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main id="main-content" class="container section">
     <p class="eyebrow">Credits and sources</p>
     <h1>Attributions</h1>
@@ -91,10 +102,35 @@
 
     <p><a href="index.html">Return to the home page</a></p>
   </main>
+
+   <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="footer-brand">The Secret Garden</span>
+        <p>A small guide to the stories flowers can tell.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="guide.html">Flower Guide</a>
+          <a href="bouquet.html">Create a Bouquet</a>
+          <a href="attributions.html">Attributions</a>
+        </div>
+      </div>
+      <div>
+        <h3>Project</h3>
+        <div class="footer-links">
+          <a href="https://www.loom.com/share/1e36e2ee26604856950032ddb5a97d86"></a>
+        </div>
+        <p class="footer-note">
+          © <span id="currentyear"></span> Nina Fuentes. All rights reserved.
+        </p>
+        <p class="footer-note">Last modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+  
 </body>
 
-<footer class="site-footer">
-  <p>© 2026 The Secret Garden of Flowers | Nina Fuentes</p>
-</footer>
 
 </html>
