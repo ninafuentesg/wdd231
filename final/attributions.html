@@ -2,40 +2,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Attributions | The Secret Garden of Flowers</title>
-
-  <meta name="description"
-    content="Sources and acknowledgments for the photographs and floral information used in The Secret Garden of Flowers.">
-
+  <meta name="description" content="Sources and acknowledgments for the photographs and floral information used in The Secret Garden of Flowers.">
   <meta name="author" content="Nina Fuentes">
+
+  <meta property="og:title" content="Sources Behind The Secret Garden of Flowers">
+  <meta property="og:description" content="Explore the sources behind the floral meanings, photographs, and development resources featured in The Secret Garden of Flowers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ninafuentesg.github.io/wdd231/final/attributions.html">
+  <meta property="og:image" content="https://ninafuentesg.github.io/wdd231/final/images/hero-flowers.webp">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta property="og:title"
-    content="Attributions | The Secret Garden of Flowers">
-  <meta property="og:description"
-    content="Explore the sources behind the floral meanings and photographs featured in The Secret Garden of Flowers.">
-  <meta property="og:type" content="website">
-  <meta property="og:url"
-    content="https://ninafuentesg.github.io/wdd231/final/attributions.html">
-  <meta property="og:image"
-    content="https://ninafuentesg.github.io/wdd231/final/images/rose.jpg">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <script src="scripts/main.js" defer></script>
+
+  <script type="module" src="scripts/main.js"></script>
+</head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header class="site-header">
+  <header class="site-header">
     <div class="container header-container">
       <a class="brand" href="index.html" aria-label="The Secret Garden of Flowers home">
         <img src="favicon.svg" alt="" width="48" height="48">
@@ -46,18 +41,20 @@
       </a>
 
       <button class="menu-toggle" type="button"
-        aria-label="Open navigation menu" aria-expanded="false"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
         aria-controls="primary-navigation">☰</button>
 
       <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
         <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="guide.html">Flower Guide</a></li>
           <li><a href="bouquet.html">Create a Bouquet</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main id="main-content" class="container section">
     <p class="eyebrow">Credits and sources</p>
     <h1>Attributions</h1>
@@ -75,12 +72,12 @@
       </p>
       <ul>
         <li>
-          <a href="https://www.rhs.org.uk/plants/types/flowers">
+          <a href="https://www.rhs.org.uk/plants/types/flowers"
+             target="_blank" rel="noopener noreferrer">
             Royal Horticultural Society — Flowers
           </a>
-          Use for horticultural background where relevant.
+          <p>Used for horticultural background where relevant.</p>
         </li>
-       
       </ul>
     </section>
 
@@ -88,12 +85,14 @@
       <h2>Development resources</h2>
       <ul>
         <li>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+             target="_blank" rel="noopener noreferrer">
             MDN Web Docs — JavaScript
           </a>
         </li>
         <li>
-          <a href="https://fonts.google.com/">
+          <a href="https://fonts.google.com/"
+             target="_blank" rel="noopener noreferrer">
             Google Fonts
           </a>
         </li>
@@ -103,34 +102,39 @@
     <p><a href="index.html">Return to the home page</a></p>
   </main>
 
-   <footer class="site-footer">
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <span class="footer-brand">The Secret Garden</span>
         <p>A small guide to the stories flowers can tell.</p>
       </div>
+
       <div>
         <h3>Explore</h3>
         <div class="footer-links">
+          <a href="index.html">Home</a>
           <a href="guide.html">Flower Guide</a>
           <a href="bouquet.html">Create a Bouquet</a>
-          <a href="attributions.html">Attributions</a>
         </div>
       </div>
+
       <div>
         <h3>Project</h3>
         <div class="footer-links">
-          <a href="https://www.loom.com/share/1e36e2ee26604856950032ddb5a97d86"></a>
+          <a href="https://www.loom.com/share/1e36e2ee26604856950032ddb5a97d86"
+             target="_blank" rel="noopener noreferrer">
+            Watch project presentation
+          </a>
         </div>
         <p class="footer-note">
           © <span id="currentyear"></span> Nina Fuentes. All rights reserved.
         </p>
-        <p class="footer-note">Last modified: <span id="lastModified"></span></p>
+        <p class="footer-note">
+          Last modified: <span id="lastModified"></span>
+        </p>
       </div>
     </div>
   </footer>
-  
 </body>
-
-
 </html>
+
